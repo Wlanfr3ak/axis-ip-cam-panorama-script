@@ -1,6 +1,7 @@
 #!/bin/bash
 #Idea from: https://medium.com/@sekhar.rahul/creating-a-time-lapse-video-on-the-command-line-with-ffmpeg-1a7566caf877
 # todo: check if file exist but corrupt! -> rm that will safe a lot of time ...
+# rodo: gpu acc? https://ntown.at/de/knowledgebase/cuda-gpu-accelerated-h264-h265-hevc-video-encoding-with-ffmpeg/
 
 fabian@axistimelapse:~$ mkdir 2021-01-26
 fabian@axistimelapse:~$ cd timelapse/
