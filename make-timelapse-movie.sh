@@ -2,6 +2,10 @@
 #Idea from: https://medium.com/@sekhar.rahul/creating-a-time-lapse-video-on-the-command-line-with-ffmpeg-1a7566caf877
 # todo: check if file exist but corrupt! -> rm that will safe a lot of time ...
 
+fabian@axistimelapse:~$ mkdir 2021-01-26
+fabian@axistimelapse:~$ cd timelapse/
+fabian@axistimelapse:~/timelapse$ cp 2021_01_26* /home/fabian/2021-01-26/
+
 ls *.jpg | cat -n | while read n f; do mv "$f" "$n.jpg"; done 
 
 #ffmpeg -framerate 60 -pattern_type glob -i "timelapse/2021_01_25*.jpg" -s:v 3840x2160 -c:v libx265 -preset ultrafast 2021-01-25-newram60fps.mkv
