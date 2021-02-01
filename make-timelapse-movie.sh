@@ -6,6 +6,9 @@
 fabian@axistimelapse:~$ mkdir 2021-01-26
 fabian@axistimelapse:~$ cd timelapse/
 fabian@axistimelapse:~/timelapse$ cp 2021_01_26* /home/fabian/2021-01-26/
+mv /home/fabian/timelapse/2021_01_31* /home/fabian/2021-01-31/
+
+# variable date YYYY_MM_DD
 
 ls *.jpg | cat -n | while read n f; do mv "$f" "$n.jpg"; done 
 
